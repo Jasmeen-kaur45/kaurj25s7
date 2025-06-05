@@ -10,6 +10,7 @@
     File: part2.html (assignment2)
     Date: 4 June,2025
     Description: this website consist of  a table with some data on the planets in our solar system-->
+    <!--style-->
     <style>
         html {
             font-family: sans-serif;
@@ -52,8 +53,11 @@
 
 <body>
     <h1>Table Template</h1>
-
+    
+    <!-- table starts from here-->
     <table>
+
+        <!--caption for the table -->
         <caption>Data about the planets of our solar system (Planetary facts taken from <a
                 href="http://nssdc.gsfc.nasa.gov/planetary/factsheet/">Nasa's Planetary Fact Sheet - Metric</a>).
         </caption>
@@ -76,7 +80,8 @@
         </thead>
         <tbody>
             <tr>
-                <th rowspan="4" colspan="2"> Terrestial planets</th>
+                <!--grouping terrestrial planet-->
+                <th rowspan="4" colspan="2"> Terrestrial planets</th>
                 
                 <th>Mercury</th>
                 <td>0.330</td>
@@ -129,8 +134,9 @@
                 <td>The red planet</td>
             </tr>
             <tr>
+                <!--grouping jovian and gas giants-->
                 <th rowspan="4">Jovian planets</th>
-                <th rowspan="2"> Glass glants</th>
+                <th rowspan="2"> Gas giants</th>
                 <th>Jupiter</th>
                 <td>1898</td>
                 <td>142,984 </td>
@@ -160,8 +166,8 @@
 
             </tr>
             <tr>
-                
-                <th rowspan="2"> Ice glants </th>
+                <!--grouping ice giants-->
+                <th rowspan="2"> Ice giants </th>
                 <th>Uranus</th>
                 <td>86.8</td>
                 <td>51,118</td>
@@ -189,6 +195,8 @@
                 <td></td>
             </tr>
             <tr>
+
+                <!--grouping dwarf-->
                 <th rowspan="1" colspan="2"> Dwarf planet</th>
                 
                 
@@ -207,6 +215,7 @@
         </tbody>
 
     </table>
+    <!--end of the table-->
 </body>
 
 </html>
