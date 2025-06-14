@@ -1,3 +1,7 @@
+/* Name : Jasmeen kaur 
+Date : June 13, 2025
+File : style 1 (for part 1, assignment 3 )
+description : this gives style to web page */
 body {
   font-family: Arial, Helvetica, sans-serif;
 }
@@ -26,3 +30,12 @@ a:visited {
 a:hover {
   text-decoration: none;
 }
+
+h1{
+ /*Make the level one heading pink, using the CSS color keyword hotpink.*/
+ color: hotpink;
+
+ /*Give the heading a 10px dotted border-bottom which uses the CSS color keyword purple.*/
+ border-bottom: dotted 10px purple;
+}
+
