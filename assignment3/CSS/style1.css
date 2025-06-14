@@ -39,3 +39,7 @@ h1{
  border-bottom: dotted 10px purple;
 }
 
+h2{
+  /*Make the level 2 heading italic.*/
+  font-style: italic;
+}
