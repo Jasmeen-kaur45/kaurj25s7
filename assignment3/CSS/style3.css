@@ -124,3 +124,19 @@ a[href^="http"]::after{
      background-repeat: no-repeat;
      vertical-align: middle;
 }
+/*lists*/
+/* Make sure the spacing of your lists and list items works well with the styling of the overall page. Each list item should have the same line-height as a paragraph line, and each list should have the same spacing at its top and bottom as you have between paragraphs. */
+ul,ol{
+    /*same as line height*/
+    margin-top: 1.6em;
+    /*gives equal space around lists */
+    margin-bottom: 1.6em;
+    /* space before bulltes or numbers */
+    padding-left: 25px;
+}
+li{
+    line-height: 1.6em;
+    font-size: 12px;
+    margin-bottom: 6px;
+    list-style-type: square;
+}
