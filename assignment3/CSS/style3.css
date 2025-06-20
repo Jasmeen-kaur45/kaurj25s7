@@ -3,6 +3,9 @@ Date : June 20, 2025
 File : style 3 (for part 3, assignment 3 )
 description : this gives style to web page  */
 
+/*import google fonts*/
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Slab:wght@700&display=swap');
+
 * {
   box-sizing: border-box;
 }
@@ -45,12 +48,4 @@ header, footer {
   border-bottom: 5px solid #a66;
 }
 
-/*adding fonts */
-@font-face {
-  font-family: 'EBGaramond';
-  src: url('fonts/EBGaramond-Regular.woff2') format('woff2');
-}
-@font-face {
-  font-family: 'Oswald';
-  src: url('fonts/Oswald-Regular.woff2') format('woff2');
-}
+
