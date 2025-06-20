@@ -16,4 +16,13 @@ div{
   margin: 50px auto;
   /*Center the text within the box.*/
   justify-content: center;
+  text-align: center;
+ /* A slight increase in font size, to around 17-18 pixel computed style. Use rems. Write a comment about how you worked out the value.*/
+ /*16px= 1rem 
+ 17.6px=1.1rem*/
+ font-size: 1.1rem;
+ /*A contrasting color for the text and a black text shadow.*/
+ color: white;
+ text-shadow: 1px 1px 2px black;
+ font-weight: bold;
 }
