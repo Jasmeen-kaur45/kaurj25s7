@@ -6,4 +6,10 @@ html {
   font-family: sans-serif;
 }
 
-/* Your CSS below here */
+/*A reasonable width for a large box, say around 200 pixels.*/
+div{
+   /* A reasonable width for a large box, say around 200 pixels.*/
+   width: 200px;
+   /*A reasonable height for a large box, centering the text vertically in the process.*/
+   height:100px ;
+}
