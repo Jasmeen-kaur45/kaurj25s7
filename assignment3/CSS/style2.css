@@ -11,14 +11,15 @@ div{
    /* A reasonable width for a large box, say around 200 pixels.*/
    width: 200px;
    /*A reasonable height for a large box, centering the text vertically in the process.*/
-   height:100px ;
+   height:120px ;
   /* Center the box horizontally.*/
   margin: 50px auto;
   /*Center the text within the box.*/
   justify-content: center;
   text-align: center;
   vertical-align: middle;
-   display: flex;
+  display: flex;
+  align-items: center;
  /* A slight increase in font size, to around 17-18 pixel computed style. Use rems. Write a comment about how you worked out the value.*/
  /*16px= 1rem 
  17.6px=1.1rem*/
@@ -34,5 +35,13 @@ div{
  border: 1px solid #b30000;
  /* A fairly subtle border radius. */
  border-radius: 10px;
+ /* A linear semi-transparent black gradient that goes toward the bottom right corner. Make it completely transparent at the start, grading to around 0.2 opacity by 30% along, and remaining at the same color until the end. */
+ background-image: linear-gradient(
+  to bottom right, 
+  rgba(0,0,0,0)0%
+  rgba(0,0,0,0.2)30%,
+  rgba(0,0,0,0.2)100%
+ );
+
 
 }
