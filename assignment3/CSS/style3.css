@@ -51,9 +51,35 @@ header, footer {
 
 body{/* Apply your body font to the whole page */
     font-family: Georgia, serif ;
+    /* Give the page a site-wide font-size of 10px. */
+    font-size: 12px;
+    /* Give your body text a suitable line-height. */
+    line-height: 1.6;
+    /* Give your body text some letter-spacing and word-spacing, as appropriate. */
+    letter-spacing: 0.5px;
+    word-spacing: 1px;
 
 }
-h1,h2{
+h1{
     /* your heading font to your headings. */
     font-family: 'Josefin slab', serif;
+   /* Give your headings and other element types appropriate font-sizes defined using a suitable relative unit. */
+   font-size: 2.5rem;
+   /* Center your top level heading on the page. */
+   text-align: center;
+   /* Give your headings a little bit of letter-spacing to make them not too squashed, and allow the letters to breathe a bit. */
+   letter-spacing: 1px;
+
+}
+h2 {
+    /* your heading font to your headings. */
+    font-family: 'Josefin slab', serif;
+    /* Give your headings and other element types appropriate font-sizes defined using a suitable relative unit. */
+    font-size: 25px;
+    /* Give your headings a little bit of letter-spacing to make them not too squashed, and allow the letters to breathe a bit. */
+    letter-spacing: 1px;
+}
+/* Give the first paragraph after each heading in the <section> a little bit of text-indentation, say 20px. */
+header,section,aside,nav,footer{
+    padding: 15px;
 }
