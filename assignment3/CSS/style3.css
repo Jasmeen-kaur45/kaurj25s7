@@ -45,4 +45,12 @@ header, footer {
   border-bottom: 5px solid #a66;
 }
 
-/* WRITE YOUR CODE BELOW HERE */
+/*adding fonts */
+@font-face {
+  font-family: 'EBGaramond';
+  src: url('fonts/EBGaramond-Regular.woff2') format('woff2');
+}
+@font-face {
+  font-family: 'Oswald';
+  src: url('fonts/Oswald-Regular.woff2') format('woff2');
+}
