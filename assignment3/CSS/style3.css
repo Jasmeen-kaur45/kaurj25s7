@@ -49,3 +49,11 @@ header, footer {
 }
 
 
+body{/* Apply your body font to the whole page */
+    font-family: Georgia, serif ;
+
+}
+h1,h2{
+    /* your heading font to your headings. */
+    font-family: 'Josefin slab', serif;
+}
