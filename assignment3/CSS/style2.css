@@ -12,4 +12,8 @@ div{
    width: 200px;
    /*A reasonable height for a large box, centering the text vertically in the process.*/
    height:100px ;
+  /* Center the box horizontally.*/
+  margin: 50px auto;
+  /*Center the text within the box.*/
+  justify-content: center;
 }
