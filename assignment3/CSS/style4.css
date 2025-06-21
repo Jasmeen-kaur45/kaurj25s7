@@ -87,12 +87,21 @@ main aside {
     flex: 1;
 }
 /*The photographs should display as a two column grid with a 1 pixel gap between the images.*/
-.photos{
-    display: grid;
-    grid-template-columns: (2,1fr);
-    gap:1px
+.photos {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr); /* creates 2 equal columns */
+  gap: 1px;
 }
-.photos img{
-    width: 100%;
-    display: block;
+
+.photos li {
+  margin: 0;
+  padding: 0;
+}
+
+.photos img {
+  width: 100%;
+  display: block;
 }
