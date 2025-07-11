@@ -13,6 +13,13 @@ let storyText='It was 94 fahrenheit outside, so :insertx: went for a walk. When 
 let insertX=['Willy the Goblin',
              'Big Daddy',
              'Father Christmas'];
+let insertY=['the soup kitchen',
+              'Disneyland',
+               'the White House'
+];
+let insertZ=['spontaneously combusted',
+'melted into a puddle on the sidewalk',
+'turned into a slug and crawled away'];
 
 
 function randomValueFromArray(array){
