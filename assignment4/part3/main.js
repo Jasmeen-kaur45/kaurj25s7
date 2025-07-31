@@ -1,3 +1,9 @@
+/*
+Name : Jasmeen Kaur
+Date: July 31,2025
+Description: Js for part3 (assignment 4)*/
+
+
 // setup canvas
 
 const canvas = document.querySelector("canvas");
