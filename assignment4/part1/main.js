@@ -26,3 +26,39 @@ function randomValueFromArray(array){
   const random = Math.floor(Math.random()*array.length);
   return array[random];
 }
+//Event listenr for button
+randomize.addEventListener('click', result);
+
+function result () {
+  //Step 1 : creating copy of the story template 
+  let newStory=storyText;
+
+  //step 2: selecting random elements from each array
+  const xItem= randomValueFromArray(insertX);
+  const yItem= randomValueFromArray(insertY);
+  const zItem= randomValueFromArray(insertZ);
+
+  //step 3 : replace placeholder with random selections
+  newStory=newStory.replaceAll(':insertx',xItem);
+  newStory=newStory.replace(':inserty',yItem);
+  newStory=newStory.replace(':insertz',zItem);
+
+
+  //step 4 : replace "bob"
+  if(customName.value !== '') {
+    const name = customName.value.trim();
+    newStory=newStory.replace('Bob',name)
+
+  }
+  //step 5 : convert units if UK is selected
+  if(document.getElementById("uk").checked) {
+    const weight = Math.round(300/14)+" stone";
+    const temperature =  Math.round((94-32)*5/9)+ " centigrade";
+    
+    newStory=newStory.replace('94 fahrenheit',temperature);
+    newStory=newStory.replace('300 pounds',weight);
+  }
+  //step 6 : display the story
+  story.textContent = newStory;
+  story.style.visibility = 'visible';
+}
