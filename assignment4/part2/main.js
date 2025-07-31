@@ -19,7 +19,7 @@ const imgAlternatives={ 'pic1.jpg': 'Closeup of a blue eye',
     'pic4.jpg': 'Ancient Egyptian wall painting',
     'pic5.jpg': 'Moth resting on a green leaf'
 };
-/* Looping through images */
+/* step 3:Looping through images */
 for(let i=0;i<imageFilenames.length;i++){
     const fileName=imageFilenames[i];
     const altText=imageAlts[fileName];
@@ -30,4 +30,27 @@ newImage.setAttribute('src', xxx);
 newImage.setAttribute('alt', xxx);
 thumbBar.appendChild(newImage);
 
-/* Wiring up the Darken/Lighten button */
+/* step 4 :add clcik event*/
+  newImage.addEventListener('click', function () {
+    displayedImage.setAttribute('src', newImage.getAttribute('src'));
+    displayedImage.setAttribute('alt', newImage.getAttribute('alt'));
+  });
+
+
+/*step 5 :  Wiring up the Darken/Lighten button */
+btn.addEventListener('click',function(){
+    const currentClass=btn.getAttribute('class');
+    if (currentClass==='dark'){
+        btn.setAttribute('class','light');
+        btn.textContent='Lighten';
+        overlay.computedStyleMap.backgroundColor='rgb(0 0 0/ 50%)';
+
+    }else{
+        btn.setAttribute('class','dark');
+        btn.textContent='Darken';
+        overlay.computedStyleMap.backgroundColor='rgb(0 0 0 / 0%)';
+
+    }
+})
+
+
