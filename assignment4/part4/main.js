@@ -25,7 +25,7 @@ function random(min, max) {
 }
 
 function randomRGB() {
-  return `rgb(${random(0, 255)} ${random(0, 255)} ${random(0, 255)})`; // spaces instead of commas for consistency
+  return `rgb(${random(0, 255)} ${random(0, 255)} ${random(0, 255)})`; 
 }
 
 // ==========================
@@ -118,7 +118,7 @@ class EvilCircle extends Shape {
     ctx.beginPath();
     ctx.strokeStyle = this.color;
     ctx.lineWidth = 3;
-    ctx.arc(this.x, this.y, this.size, 0, 2 * Math.PI); // fixed: radius was 0 before
+    ctx.arc(this.x, this.y, this.size, 0, 2 * Math.PI); 
     ctx.stroke();
   }
 
@@ -141,18 +141,17 @@ class EvilCircle extends Shape {
     for (const ball of balls) {
       if (ball.exists) {
         const dx = this.x - ball.x;
-        const dy = this.y - ball.y; // fixed: was using this.x - ball.y before
+        const dy = this.y - ball.y; 
         const distance = Math.sqrt(dx * dx + dy * dy);
 
         if (distance < this.size + ball.size) {
           ball.exists = false;
           ballCount--;
-          para.textContent = `Ball count: ${ballCount}`; // fixed: use template literal
-        }
+          para.textContent = `Ball count: ${ballCount}`; 
       }
     }
   }
-}
+}}
 
 // ==========================
 // Create balls
