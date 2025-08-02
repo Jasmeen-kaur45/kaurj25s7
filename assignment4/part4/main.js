@@ -11,6 +11,8 @@ const ctx = canvas.getContext("2d");
 const width = (canvas.width = window.innerWidth);
 const height = (canvas.height = window.innerHeight);
 
+//ball count display reference
+const ballCountDisplay=document.getElementById("ballCount")
 // function to generate random number
 
 function random(min, max) {
@@ -23,14 +25,23 @@ function randomRGB() {
   return `rgb(${random(0, 255)},${random(0, 255)},${random(0, 255)})`;
 }
 
-class Ball {
+//declaring a new shape class
+class shape {
+    constructor(x,y,velX,velY){
+        this.x=x;
+        this.y=y;
+        this.velX=velX;
+        this.velY=velY;
+    }
+}
+//ball class
+class Ball extends shape {
   constructor(x, y, velX, velY, color, size) {
-    this.x = x;
-    this.y = y;
-    this.velX = velX;
-    this.velY = velY;
+   super(x,y,velX,velY);
+    
     this.color = color;
     this.size = size;
+    this.exists=true;
   }
 
   draw() {
@@ -60,10 +71,10 @@ class Ball {
     this.x += this.velX;
     this.y += this.velY;
   }
-
+//updated the method by adding exist property
   collisionDetect() {
     for (const ball of balls) {
-      if (!(this === ball)) {
+      if (!(this === ball)&& ball.exists) {
         const dx = this.x - ball.x;
         const dy = this.y - ball.y;
         const distance = Math.sqrt(dx * dx + dy * dy);
