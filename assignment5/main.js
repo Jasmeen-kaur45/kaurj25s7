@@ -1,3 +1,8 @@
+/*
+Name : Jasmeen Kaur
+Date: August 8,2025
+Description: Js for assignment 5
+*/
 // functionality for showing/hiding the comments section
 
 const showHideBtn = document.querySelector('.show-hide');
