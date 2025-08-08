@@ -56,7 +56,7 @@ p, li, table {
 /* || header layout */
 
 div[class="nav"], article, footer, .secondary {
-  background-color: green;
+  background-color:white;
 }
 
 article, footer, .secondary {
@@ -251,4 +251,17 @@ audio {
 
 .comment-container li p:nth-child(2) {
   flex: 5;
+}
+/*Color*/
+article,footer,.secondary{
+    background-color: #ffffff;
+}
+ div .nav{
+    background-color:white;
+    border-bottom: 2px solid #ccc;
+}
+.nav a {
+    color: white;
+}body{
+    background-color: #dde;
 }
