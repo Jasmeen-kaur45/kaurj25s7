@@ -1,0 +1,13 @@
+Asset Source: Kenney Background Elements
+
+Website: https://kenney.nl/assets/background-elements
+
+Creator: Kenney (Kenney.nl)
+
+License: CC0 (Public Domain)
+
+Description:
+This folder contains background images and environment elements that will be used to design the game scene.
+
+Status:
+Planned – assets have been collected but have not yet been applied in the game.
