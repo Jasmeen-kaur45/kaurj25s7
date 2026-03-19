@@ -1,0 +1,13 @@
+Asset Source: OpenGameArt Audio Library
+
+Website: https://opengameart.org
+
+Creator: Various contributors (OpenGameArt community)
+
+License: CC0 / CC-BY (varies per asset)
+
+Description:
+This folder contains audio assets such as attack sounds, enemy hit sounds, and background effects that will be used in gameplay.
+
+Status:
+Planned – assets have been collected but have not yet been integrated into the project.
