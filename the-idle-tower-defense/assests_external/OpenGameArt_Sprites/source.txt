@@ -1,0 +1,10 @@
+Asset Source: OpenGameArt Sprites
+
+Website: https://opengameart.org
+
+Creator: Various contributors (OpenGameArt community)
+
+License: CC0 / CC-BY (varies per asset)
+
+Description:
+This folder contains sprite assets such as enemies, towers, and visual effects that will be used in the game.
